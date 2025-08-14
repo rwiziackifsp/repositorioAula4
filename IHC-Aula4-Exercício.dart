@@ -13,8 +13,15 @@ class SandubaApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Sanduba!'),
-          backgroundColor: Colors.orange,
+          title: const Text(
+            'Sanduba!',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          backgroundColor: Colors.deepOrange,
           centerTitle: true,
         ),
         body: const SandubaHomePage(),
@@ -34,11 +41,11 @@ class SandubaHomePage extends StatelessWidget {
         children: [
           // Placeholder para a imagem, já que DartPad não suporta assets locais
           Container(
-            width: 100,
-            height: 100,
+            width: 200,
+            height: 200,
             child: Center(
               child: Container(
-                height: 100,
+                height: 200,
                 child: Image.network(
                   'https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/12/hamburguer-unsplash.jpg?w=1200&h=1200&crop=1',
                 ),
@@ -69,7 +76,7 @@ class SandubaHomePage extends StatelessWidget {
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orange,
+              backgroundColor: Colors.deepOrange,
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
             ),
             child: const Text(
