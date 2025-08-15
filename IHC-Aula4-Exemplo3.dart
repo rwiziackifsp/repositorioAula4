@@ -61,20 +61,20 @@ class ScreenPuzzle extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Screen4()),
+                MaterialPageRoute(builder: (context) => const Screen3()),
               );
             },
-            child: const Text('Tela 3: Confirmação de Pedido'),
+            child: const Text('Tela 3: Carrinho de Compras'),
           ),
           const SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Screen3()),
+                MaterialPageRoute(builder: (context) => const Screen4()),
               );
             },
-            child: const Text('Tela 4: Carrinho de Compras'),
+            child: const Text('Tela 4: Confirmação de Pedido'),
           ),
         ],
       ),
